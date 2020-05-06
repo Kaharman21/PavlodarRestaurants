@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/text.zagolovok"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorBlack"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="12dp">
+    <ImageView
+        android:id="@+id/menu.image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/goriachee"
+        android:scaleType="centerCrop"
+    />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Тигровые креветки"
+            android:textColor="@color/colorBlack"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Креветки тигровые, соевый соус, чеснок"
+            android:layout_below="@id/name"
+            android:maxLines="1"
+            />
+
+<!--        <ImageView-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:id="@+id/img_minus"-->
+<!--            android:src="@drawable/minus48radius20"-->
+<!--            android:layout_above="@+id/price"-->
+
+<!--            />-->
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="0"
+            android:layout_above="@+id/price"
+            android:layout_marginLeft="30dp"/>
+
+<!--        <ImageView-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:id="@+id/img_plus"-->
+<!--            android:src="@drawable/plus48radius20"-->
+<!--            android:layout_above="@+id/price"-->
+<!--android:layout_marginLeft="44dp"-->
+<!--            />-->
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000 тг"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentBottom="true"
+            />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150 гр"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.map.MapFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/cardview_back"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/back"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="5dp"
+            android:id="@+id/cardview_search"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            >
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/search_fin"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/bottom_sheet"></include>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Павлодар"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/colorAccent"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewMap"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/map31tchk"
+            android:scaleType="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Все рестораны"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/colorBlack"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewRestoran"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/veranda"
+            android:scaleType="centerCrop"/>
+
+
+        <RatingBar
+            android:id="@+id/ratingBar_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="3"
+            android:isIndicator="false"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:transformPivotX="0dp"
+            android:layout_margin="10dp"
+            android:theme="@style/MyRatingBar"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Гриль-Бар VERANDA"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="​Горячие вторые блюда • ​Десерты​ • Корпоративные обеды​ • Паста​ • Салаты​ • Супы​ • Бургеры"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/garage"
+            android:scaleType="centerCrop"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="4"
+            android:isIndicator="false"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:transformPivotX="0dp"
+            android:layout_margin="10dp"
+            android:theme="@style/MyRatingBar"
+           />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GARAGE"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="​Авторская кухня • ​Американская кухня​ • Домашняя кухня​ • Европейская кухня​ • Испанская кухня • ​Кавказская кухня"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/gioconda"
+            android:scaleType="centerCrop"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="2"
+            android:isIndicator="false"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:transformPivotX="0dp"
+            android:layout_margin="10dp"
+            android:theme="@style/MyRatingBar"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giconda"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="​До 200 мест​ • VIP-зал • ​Дресс-код​ • Фейсконтроль"/>
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spisokRestaurantRecyclerView"
+            android:layout_marginTop="50dp"/>
+
+
+
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+</ScrollView>
